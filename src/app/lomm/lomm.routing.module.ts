@@ -5,8 +5,8 @@ import { LommComponent } from './components/lomm/lomm.component';
 
 const routes: Routes = [
   {
-    path: 'lomm', component: LommComponent, data: {
-      breadcrumb: 'Living Our Mission Measures'
+    path: 'performance', component: LommComponent, data: {
+      breadcrumb: 'Performance'
     }
   }
 ];

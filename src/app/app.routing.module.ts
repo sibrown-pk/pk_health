@@ -11,10 +11,10 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'lomm', loadChildren: './lomm/lomm.module#LommModule'
+    path: 'performance', loadChildren: './lomm/lomm.module#LommModule'
   },
   {
-    path: 'hsc', loadChildren: './hsc/hsc.module#HscModule'
+    path: 'data-cards', loadChildren: './hsc/hsc.module#HscModule'
   },
 ];
 

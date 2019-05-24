@@ -5,8 +5,8 @@ import { HscComponent } from './components/hsc/hsc.component';
 
 const routes: Routes = [
   {
-    path: 'hsc', component: HscComponent, data: {
-      breadcrumb: 'Hospital Scorecard'
+    path: 'data-cards', component: HscComponent, data: {
+      breadcrumb: 'Data Cards'
     }
   }
 ];

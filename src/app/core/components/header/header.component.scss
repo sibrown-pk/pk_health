@@ -33,9 +33,9 @@
         &.header-title {
             cursor: pointer;
 
-            h2 {
-                font-size: 24px;
-                font-weight: bold;
+            h2, h1 {
+                // font-size: 24px;
+                font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: normal;
