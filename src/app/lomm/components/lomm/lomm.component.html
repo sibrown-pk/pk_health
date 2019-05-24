@@ -1,0 +1,43 @@
+<div class="card-container toggled">
+  <div class="row">
+    <div class="col-12">
+      <div class="sec-header-drop-menu-container">
+        <h2>Living our Mission Measures</h2>
+        <!-- Dropdown component here -->
+        <!-- <app-card-filter-panel [divisions]="lommDivisions" (card-division-selection)="cardDivisionSelect($event)">
+        </app-card-filter-panel> -->
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card-body-section container" *ngIf="cardsMatrix !== null && cardsMatrix.length > 0">
+        <!-- Groups -->
+        <ng-container *ngFor="let cards of cardsMatrix; let i=index;">
+          <ng-container *ngTemplateOutlet="cardGroupTemplate; context: {$implicit: cards, cards:cards, outerIndex: i}">
+
+          </ng-container>
+        </ng-container>
+
+        <!-- Card Group-Template -->
+        <ng-template #cardGroupTemplate let-cards="cards" let-outerIndex="outerIndex">
+          <div class="row cards">
+            <div class="col-{{getColWidth()}}" *ngFor="let card of cards; let innerIndex=index">
+              <app-card-primary [card-data]="card" [card-next-qtr-data]="getNextQtrCard(card)"
+                 (click)="cardClick(card, outerIndex)"></app-card-primary>
+            </div>
+          </div>
+          <div class="row card-detail">
+            <div class="col-12">
+              <app-card-detail id="card-detail-{{outerIndex}}"></app-card-detail>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <div class="card-body-section container fallback" *ngIf="cardsMatrix === null || cardsMatrix.length === 0">
+        <div class="fallback-message-wrapper">
+          <h2>
+            No Data for {{currentDivisionFilterSelection}}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>

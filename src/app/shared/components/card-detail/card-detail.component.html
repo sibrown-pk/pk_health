@@ -1,0 +1,75 @@
+<div class="card-detail-container" [hidden]="!detailMode">
+  <div class="row">
+    <div class="col-12 close-btn-wrapper">
+      <a href="javscript:void(0)" (click)="toggleDetailMode(false)">
+        <span><i class="fa fa-times"></i></span>
+      </a>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+      <!-- card-info -->
+      <div class="card-detail-info">
+        <h3>{{card?.MeasureName || "N/A"}}</h3>
+        <p>{{card?.summary?.summary || "N/A"}}</p>
+      </div>
+      <hr>
+      <!-- card-metrics -->
+      <div class="card-detail-metrics">
+        <h4>Performance against Goal</h4>
+        <div class="data-grp">
+          <span>Actual</span>
+          <span class="metric-placeholder">
+            <span [ngStyle]="{'color': card?.danger ? 'red' : '#52575a'}">{{card?.Actual || "N/A"}}
+              {{metricUnit(card?.Format)}}</span>
+            <span class="grosstext">{{card !== null ? card?.MeasureLabel || "N/A" : "N/A"}}</span>
+          </span>
+        </div>
+        <div class="data-grp">
+          <span>Goal</span>
+          <span class="metric-placeholder">
+            <span>{{card?.Goal || "N/A"}} {{metricUnit(card?.Format)}}</span>
+            <span class="grosstext">{{card !== null ? card?.MeasureLabel || "N/A" : "N/A"}}</span>
+          </span>
+        </div>
+        <!-- NEXT QUARTER DATA -->
+        
+        <div class="card-next-quarter" *ngIf="cardNextQtr">
+            <hr>
+          <h5 class="card-period">
+            {{ cardNextQtr?.Period }}
+            <span *ngIf="cardNextQtr?.Reporting_Period">for</span>
+            {{cardNextQtr?.Reporting_Period}}
+          </h5>
+          <div class="data-grp">
+            <span class="indicator-label">Goal</span>
+            <span class="metric-placeholder">
+              <span class="indicator-figure">{{cardNextQtr?.Goal || "N/A" }} {{metricUnit(cardNextQtr?.Format)}}</span>
+              <span class="grosstext">{{cardNextQtr !== null ? cardNextQtr?.MeasureLabel || "N/A" : "N/A"}}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr *ngIf="!cardNextQtr">
+      <!-- performance-dashboard-links -->
+      <div class="performance-dashboards" *ngIf="performanceDashboardLinks.length > 0">
+        <h4>Performance Dashboards</h4>
+        <p *ngFor="let link of performanceDashboardLinks">
+          <a [href]="link?.link" target="_Blank">
+            <span>{{link?.label}}</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+      <div class="card-detail-visualization-wrapper">
+        <h3>
+          <span>Service to the Poor & Vulnerable</span>
+          <span>&nbsp;for&nbsp;</span>
+          <span>FY19 YTD September</span>
+        </h3>
+        <div class="visualization-container" *ngIf="iframeUrl">
+          <app-iframe-wrapper [iframe-src]="iframeUrl"></app-iframe-wrapper>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

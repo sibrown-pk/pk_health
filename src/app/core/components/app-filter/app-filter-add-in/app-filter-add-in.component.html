@@ -1,0 +1,23 @@
+<div class="filter-addin-wrapper">
+  <div class="division-filter-pill">
+    <a href="javascript:void(0)">
+      <span>
+        {{currentDivisionFilter}}
+      </span>
+      <span (click)="removeCurrentDivisionFilter()" *ngIf="currentDivisionFilter !== defaultDivisionFilter">
+        <i class="close-thick"></i>
+      </span>
+    </a>
+  </div>
+  <div class="hospital-filter-pill" *ngIf="isHscPage">
+    <a href="javascript:void(0)">
+      <span>
+        {{ currentHospitalFilter?.isDefault ? currentHospitalFilter?.Division + ' - All Hospitals' : currentHospitalFilter?.Hospital }}
+      </span>
+      
+      <span (click)="removeCurrentHospitalFilter()" *ngIf="!currentHospitalFilter?.isDefault">
+        <i class="close-thick"></i>
+      </span>
+    </a>
+  </div>
+</div>

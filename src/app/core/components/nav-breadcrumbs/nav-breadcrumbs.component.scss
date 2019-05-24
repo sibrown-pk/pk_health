@@ -1,0 +1,47 @@
+@import './../../../../styles/colors';
+
+.breadcrum-wrapper {
+    padding-top: 24px;
+
+    ol.breadcrumb {
+        padding: 0;
+        margin: 0;
+        background: none;
+
+        .breadcrumb-item+.breadcrumb-item {
+
+            @media(max-width:767px) {
+                padding:0;
+            }
+            &::before {
+                content: ">";
+            }
+        }
+
+        >li.breadcrumb-item {
+            a {
+                >span {
+                    font-family: MyriadPro-It;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.1px;
+                }
+            }
+
+            &.active {
+                a {
+                    >span {
+                        color: $water-blue;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}

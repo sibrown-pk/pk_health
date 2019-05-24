@@ -1,0 +1,184 @@
+@import './../../../../styles/colors';
+@import './../../../../styles/global_variables';
+
+.hsc-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+
+    >div {
+        flex: 1;
+
+        &.card-null-state {
+            >h2 {
+                font-family: MyriadPro-Regular;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.1px;
+                color: $gunmetal-2;
+                margin: 0;
+            }
+        }
+
+        &.card-label {
+            flex: 1 1 30%;
+
+            @media (max-width: 767px) {
+                flex: 1 1 100%;
+            }
+
+            h2 {
+                font-family: MyriadPro-Regular;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.1px;
+                color: $gunmetal-2;
+                margin: 0;
+
+                @media (max-width: 991px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &.card-metrics {
+            display: inline-flex;
+            justify-content: flex-end;
+            align-items: stretch;
+            // padding: 0 40px 0 0;
+            flex: 2 1 40%;
+
+            @media (max-width: 767px) {
+                flex: 1 1 100%;
+                justify-content: flex-start;
+                // align-items: flex-end;
+                padding: 0;
+            }
+
+            .metric-group {
+                flex: 6;
+                display: inline-flex;
+                flex-direction: column;
+
+                >span {
+                    display: inline-block;
+                    text-align: right;
+                    font-style: normal;
+                    font-stretch: normal;
+                    color: $gunmetal-2;
+
+                    @media (max-width: 767px) {
+                        text-align: left;
+                    }
+
+                    &.metric-label {
+                        font-family: MyriadPro-Light;
+                        font-size: 12px;
+                        font-weight: 300;
+                        letter-spacing: 0px;
+                    }
+
+                    &.metric-value {
+                        font-family: MyriadPro-Regular;
+                        font-size: 24px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.1px;
+
+                        &.danger {
+                            color: red;
+                        }
+
+                        @media (max-width: 991px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                &.performance-label {
+                    flex: auto;
+                    align-items: flex-start;
+                    justify-content: flex-end;
+
+                    >span {
+                        font-family: MyriadPro-Light;
+                        font-size: 12px;
+                        font-weight: 300;
+                        letter-spacing: 0px;
+                        flex-basis: 50%;
+
+                        @media (min-width: 992px) {
+                            padding: 0 0 0 10px;
+                        }
+                    }
+                }
+
+            }
+
+            .metric-performance-indicator {
+                display: inline-flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: flex-end;
+                align-items: flex-start;
+                flex: auto;
+
+                >span {
+                    display: inline-block;
+
+
+                    i.fa.fa-arrow-up {
+                        font-size: 32px;
+
+                        @media (max-width: 991px) {
+                            font-size: 20px;
+                        }
+
+                        &.growth {
+                            transform: rotate(45deg);
+                            color: $growth-arrow;
+                        }
+
+                        &.decline {
+                            transform: rotate(135deg);
+                            color: $decline-arrow;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.card-kpi-graph-wrapper {
+            flex: 2 1 30%;
+
+            @media(max-width: 767px) {
+                flex: 2 2 100%;
+            }
+
+            img, app-iframe-wrapper {
+                display: block;
+                position: relative;
+                width: 100%;
+                margin: auto;
+                height: 100px;
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    width: 80%;
+                }
+            }
+        }
+
+    }
+}

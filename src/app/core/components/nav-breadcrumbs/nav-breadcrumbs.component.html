@@ -1,0 +1,13 @@
+<nav class="breadcrum-wrapper" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" [ngClass]="{'active': !isLast}" *ngFor="let breadcrumb of navBreadcrumbs; last as isLast;"
+      aria-current="page">
+      <a (click)="routeTo(breadcrumb.url)">
+        <span>
+          {{ breadcrumb?.label }}
+        </span>
+      </a>
+    </li>
+    <!-- <li class="breadcrumb-item" aria-current="page">Library</li> -->
+  </ol>
+</nav>

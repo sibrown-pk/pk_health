@@ -1,0 +1,173 @@
+@import "./../../../../styles/colors";
+@import "./../../../../styles/global_variables";
+
+.landing-page {
+  padding: $landing-page-container-padding 0;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 $landing-page-container-padding;
+  }
+
+  >h2 {
+    font-family: MyriadPro-Regular;
+    background: $bg-purple;
+    color: $white;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    padding: 13px 12px;
+    margin-bottom: 0;
+  }
+
+  .quick-link-wrapper {
+    padding: 0 15px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+    // -webkit-box-shadow: 0 1px 3px 0 $black-20, 0 2px 2px 0 $black-12, 0 0 2px 0 $black-14;
+    // box-shadow: 0 1px 3px 0 $black-20, 0 2px 2px 0 $black-12, 0 0 2px 0 $black-14;
+    background-color: $white;
+    .row {
+      margin-top: 0 !important;
+    }
+
+    @media(max-width: 767px) {
+      margin-bottom: 24px;
+    }
+
+    .quick-links {
+      text-decoration: none;
+      color: $black;
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+
+      >.ql-image {
+        display: inline-block;
+        padding-right: 20px;
+
+        img {
+          width: 23px;
+        }
+      }
+
+      .link-name {
+        font-family: MyriadPro-Regular;
+      }
+    }
+  }
+
+  .row.landing-page-cards {
+    >[class*='col-'] {
+      @media (max-width: 767px) {
+        margin-bottom: 24px;
+      }
+
+      .card {
+        -webkit-box-shadow: 0 1px 3px 0 $black-20, 0 2px 2px 0 $black-12, 0 0 2px 0 $black-14;
+        box-shadow: 0 1px 3px 0 $black-20, 0 2px 2px 0 $black-12, 0 0 2px 0 $black-14;
+        border-radius: 0;
+        border: none;
+        height: 100%;
+
+        .card-header {
+          background: $bg-purple-2;
+          position: relative;
+          display: -ms-flexbox;
+          display: -webkit-box;
+          display: flex;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top right;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+          height: 115px;
+
+          @media (min-width: 768px) {
+            height: 40%;
+          }
+
+
+          h5.card-title {
+            font-size: 32px;
+            font-family: MyriadPro-Bold;
+            position: relative;
+            display: block;
+            margin: auto 0;
+            text-align: left;
+            text-transform: uppercase;
+
+            @media (min-width: 992px) {
+              width: 80%;
+              max-width: 336px;
+            }
+
+            @media (max-width: 767px) {
+              font-size: 24px;
+            }
+
+            >span {
+              vertical-align: sub;
+              line-height: 1;
+              display: inline-table;
+            }
+          }
+
+        }
+
+        .card-body {
+          // heig ht: 244px;
+          // -ms-flex-preferred-size: 0%;
+          // flex-basis: 0%;
+
+          .card-text {
+            font-size: 16px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            font-family: MyriadPro-regular;
+            line-height: 1.5;
+            letter-spacing: 0.1px;
+            color: $grey-primary;
+          }
+
+          >a.footer-text {
+            font-family: MyriadPro-Bold;
+            color: $link-blue-1;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.1px;
+            text-align: center;
+
+            height: 32px;
+            border-radius: 20px;
+            border: solid 1px $link-blue-1;
+          }
+
+          hr {
+            background: $border-color-1;
+          }
+        }
+      }
+    }
+
+  }
+
+
+}

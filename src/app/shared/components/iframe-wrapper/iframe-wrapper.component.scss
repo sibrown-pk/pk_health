@@ -1,0 +1,13 @@
+.iframe-wrapper {
+    display: block;
+    position: relative;
+    width: 99%;
+    height: 100%;
+
+    iframe {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+}

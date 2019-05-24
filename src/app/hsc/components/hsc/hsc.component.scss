@@ -1,0 +1,139 @@
+@import './../../../../styles/colors';
+@import './../../../../styles/global_variables';
+
+.hsc-container {
+    // padding: 42px 0;
+    position: relative;
+    // margin-top: -66px;
+
+    .hsc-title {
+        position: relative;
+
+        h2 {
+            font-family: MyriadPro-Regular;
+            font-size: 36px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.1px;
+            color: $gunmetal;
+            padding-bottom: 15px;
+            // padding-top: 45px;
+            padding-top: 30px;
+
+            @media (max-width: 767px) {
+                padding-bottom: 16px;
+                font-size: 28px;
+            }
+        }
+    }
+
+    .hsc-quarter-data-filter {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding-bottom: 40px;
+
+        >h5 {
+            padding-right: 15px;
+        }
+
+        >select {
+            >option {}
+        }
+    }
+
+    .hsc-card-wrapper {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+        padding: 20px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            padding: 15px;
+        }
+
+        .kpi-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 25px;
+
+            .kpi-title {
+                position: relative;
+
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
+
+                h2 {
+                    font-family: MyriadPro-Regular;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.4;
+                    letter-spacing: 0.9px;
+                    color: $gunmetal;
+                    position: relative;
+                    margin-bottom: 15px;
+                    padding-bottom: 8px;
+                    text-transform: uppercase;
+
+                    @media (max-width: 991px) {
+                        font-size: 22px;
+                    }
+
+                    &:after {
+                        content: '';
+                        width: 40%;
+                        height: 1.6pt;
+                        background: $text-color-3;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+
+            >ul.kpi-cards {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: block;
+                position: relative;
+
+                >li {
+                    &.kpi-card-null {
+                        >h3 {
+                            font-family: MyriadPro-Regular;
+                            font-size: 18px;
+                            font-weight: bold;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.4;
+                            letter-spacing: 0.9px;
+                            color: $gunmetal;
+                            position: relative;
+                            margin-bottom: 15px;
+                            padding-bottom: 8px;
+                            text-transform: uppercase;
+
+                        }
+                    }
+
+                    &.kpi-card {
+                        padding: 0;
+                        display: block;
+                        position: relative;
+
+                        &:not(:last-of-type) {
+                            margin-bottom: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

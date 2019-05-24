@@ -1,0 +1,26 @@
+<div class="page-container">
+  <app-header></app-header>
+  <app-top-nav></app-top-nav>
+  <app-banner></app-banner>
+  <div class="page-wrapper">
+    <div class="page-section">
+      <app-nav-breadcrumbs [hidden]="!isVisible"></app-nav-breadcrumbs>
+
+      <div class="filter-elements" *ngIf="isVisible">
+        <app-filter-add-in *ngIf="isVisible"></app-filter-add-in>
+        <div class="filter-btn-placeholder" id="filter-btn-placeholder" [hidden]="filterPanelToggleStatus">
+          <a href="javascript:void(0)" (click)="toggleFilterPanel()">
+            <span>Filter</span>
+            <span>
+              <img src="../assets/imgs/Icon/Filter.png" alt="filter-icon">
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <router-outlet></router-outlet>
+
+    </div>
+    <app-filter *ngIf="isVisible"></app-filter>
+  </div>
+</div>

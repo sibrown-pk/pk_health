@@ -1,0 +1,75 @@
+@import './../../../../styles/colors';
+@import './../../../../styles/global_variables';
+
+.app-banner {
+
+    @media (max-width: 991px) {
+        width: 100%;
+        margin: 0;
+        margin-top: $header-height-dp;
+    }
+
+    >[class*='col-'] {
+        @media(max-width: 991px) {
+            padding: 0;
+        }
+    }
+
+    .page-head-info {
+        text-align: left;
+        color: $grey-primary;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        padding: 10px 15px;
+        border-bottom: 5px solid $text-color-3;
+
+
+        @media(min-width: 768px) {
+            padding: $page-container-padding;
+            background-image: url(/assets/imgs/I2I_Brand_Header_wide.10.png);
+        }
+
+        @media (max-width: 767px) {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0.4;
+                background: white;
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+
+            @media (max-width: 767px) {
+                font-size: 28px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        h2 {
+            font-size: 36px;
+            letter-spacing: 0.1px;
+        }
+
+        h3 {
+            font-size: 28px;
+            letter-spacing: 0.1px;
+            font-style: italic;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}

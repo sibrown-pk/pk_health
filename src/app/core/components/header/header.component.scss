@@ -1,0 +1,97 @@
+@import './../../../../styles/colors';
+@import './../../../../styles/global_variables';
+
+.header {
+    position: relative;
+    background-color: $bg-purple;
+    padding: 5px 27px 5px;
+    z-index: 999;
+    height: $header-height-dp;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 991px) {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        padding: 0 60px;
+        left: 0;
+        right: 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0 25px 0 50px;
+    }
+
+    >a {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &.header-title {
+            cursor: pointer;
+
+            h2 {
+                font-size: 24px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: .1px;
+                color: $white;
+                vertical-align: middle;
+                padding: 15px 0 0;
+                margin: 0;
+                display: inline-block;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
+            }
+
+            >span {
+                img.logo {
+                    width: 100%;
+                    max-width: 300px;
+                    height: auto;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                    padding: 0 5px 0 0;
+                    // margin: -3px 0 25px;
+                    @media (max-width: 460px) {
+                        max-width: 185px;
+                    }
+                }
+            }
+        }
+
+        &.helplink {
+            font-size: 16px;
+            font-weight: lighter;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: .1px;
+            color: $white;
+            // margin-top: 30px;
+
+            >span {
+                color: #fff;
+
+                &.helptext {}
+
+                img {
+                    height: 20px;
+                    padding: 0 5px 0 0;
+                    margin: -3px 0 0;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+            }
+        }
+
+    }
+
+
+}

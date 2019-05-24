@@ -1,0 +1,50 @@
+<div class="card" *ngIf="card !== null">
+    <div class="card-body" [ngStyle]="{'background-image': 'url(' +'/assets/imgs/'+ card.BgImage + ')','background-size':'cover'}">
+        <div class="card-title">
+            <div class="triangle-topright" *ngIf="card?.danger"></div>
+            <h3>{{card?.MeasureName}}</h3>
+        </div>
+        <hr [ngStyle]="getStyle(card?.Color)">
+        <div class="card-content">
+            <h5 class="card-period">
+                {{ card?.Period }}
+                <span *ngIf="card?.Reporting_Period">for</span>
+                {{card?.Reporting_Period}}
+            </h5>
+            <div class="data-grp">
+                <span class="indicator-label">Actual</span>
+                <span class="metric-placeholder">
+                    <span class="indicator-figure" [ngStyle]="{'color': card?.danger ? 'red' : '#52575a'}">{{card?.Actual
+                        || "N/A"}} {{metricUnit(card?.Format)}}</span>
+                    <span class="grosstext">{{card !== null ? card?.MeasureLabel || "N/A" : "N/A"}}</span>
+                </span>
+            </div>
+            <div class="data-grp">
+                <span class="indicator-label">Goal</span>
+                <span class="metric-placeholder">
+                    <span class="indicator-figure">{{card?.Goal || "N/A" }} {{metricUnit(card?.Format)}}</span>
+                    <span class="grosstext">{{card !== null ? card?.MeasureLabel || "N/A" : "N/A"}}</span>
+                </span>
+            </div>
+            <!-- NEXT QUARTER DATA -->
+            <div class="card-next-quarter" *ngIf="cardNextQtr">
+                    <hr [ngStyle]="getStyle(card?.Color)">
+                <h5 class="card-period">
+                    {{ cardNextQtr?.Period }}
+                    <span *ngIf="cardNextQtr?.Reporting_Period">for</span>
+                    {{cardNextQtr?.Reporting_Period}}
+                </h5>
+                <div class="data-grp">
+                    <span class="indicator-label">Goal</span>
+                    <span class="metric-placeholder">
+                        <span class="indicator-figure">{{cardNextQtr?.Goal || "N/A" }} {{metricUnit(cardNextQtr?.Format)}}</span>
+                        <span class="grosstext">{{cardNextQtr !== null ? cardNextQtr?.MeasureLabel || "N/A" : "N/A"}}</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <hr *ngIf="!cardNextQtr" [ngStyle]="getStyle(card?.Color)">
+        <a class="view-details pull-right">View Details</a>
+    </div>
+</div>

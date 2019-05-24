@@ -1,0 +1,163 @@
+.sidebar-container {
+  display: block;
+  position: relative;
+  background-color: #E7ECEF;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 50px;
+  height: 100%;
+  overflow: hidden;
+
+  &.toggled {
+    width: 260px;
+  }
+
+  .menu-toggle-wrapper {
+    text-align: right;
+    padding: .4em 10px .4em .4em;
+    z-index: 9999;
+    position: relative;
+
+    >a {
+      &.menu-toggle-btn {
+        // background-color: #0f389f;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        // border: 2px solid #1065b4;
+        // border-radius: 50%;
+        color: #fff;
+        // text-align:right;
+        text-decoration: none;
+        // background: #1065b4;
+        // box-shadow: 0 0 3px gray;
+        // font-size:20px;
+        font-weight: bold;
+        padding: 0 6px 24px 0;
+        cursor: pointer;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+
+        &.toggled {
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+        }
+      }
+
+      &#menu-toggle {
+        >img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  >ul {
+    &.sidebar-nav {
+      top: 30px;
+      width: 260px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      >li {
+        padding: 1.5em .8em;
+        &:hover:not(.li-active) {
+          opacity: .55;
+        }
+        &.li-active {
+          background: #fff;
+          border-left: 5px solid #0934a2;
+          margin-top: 25px;
+          >a {
+            font-weight: bold;
+            >span {
+              &.text-icon {
+                >.menu-text {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+        &:not(.li-active) {
+          padding-left: 50px;
+        }
+
+        >a {
+          display: flex;
+          text-decoration: none;
+          color: #999999;
+          line-height: 1;
+          clear: both;
+
+          &:hover {
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+          }
+
+          &:active,
+          &:focus {
+            text-decoration: none;
+          }
+
+          >span {
+            &.sideNav-img {
+              // height: 30px;
+              padding-right: 20px;
+
+              >img {
+                float: left;
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            &.text-icon {
+              text-align: left;
+              flex: 1;
+              display: flex;
+
+              >span {
+                &.menu-text {
+                  padding-left: 4px;                  
+                  float: right;
+                  // max-width: 175px;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.25;
+                  letter-spacing: .1px;
+                  color: #52575a;
+                  position: relative;
+                  font-weight: 400;
+                }
+
+                &.menu-icon {
+                  flex: 1;
+                  text-align: right;
+                }
+              }
+            }
+          }
+        }        
+      }
+    }
+  }
+}
+
+/* Sidebar Styles */

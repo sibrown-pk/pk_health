@@ -1,0 +1,52 @@
+<div class="hsc-card">
+
+  <!-- CARD NULL STATE -->
+  <div class="card-null-state" *ngIf="!isAvailable">
+    <h2>TBD</h2>
+  </div>
+  <!-- CARD-LABEL -->
+  <div class="card-label" *ngIf="isAvailable">
+    <h2>{{kpiCard?.Measure}} ({{kpiCard?.FiscalYear}} - {{kpiCard?.Month}})</h2>
+  </div>
+  <!-- CARD METRICS -->
+  <div class="card-metrics" *ngIf="isAvailable">
+    <!-- METRIC GROUP -->
+    <div class="metric-group">
+      <span class="metric-label">
+        Actual
+      </span>
+      <span class="metric-value {{isKPIDanger(kpiCard) ? 'danger' : ''}}">
+        {{getMeasureFormat(kpiCard.Actual, kpiCard?.MeasureFormat) || 'NA'}}
+      </span>
+    </div>
+    <!-- METRIC GROUP -->
+    <div class="metric-group">
+      <span class="metric-label">
+        {{kpiCard?.GoalLabel || 'Goal'}}
+      </span>
+      <span class="metric-value">
+        {{getMeasureFormat(kpiCard.Goal, kpiCard?.MeasureFormat) || 'NA'}}
+      </span>
+    </div>
+    <!-- METRIC GROUP -->
+    <div class="metric-group performance-label">
+      <span>
+        {{'growth'}}
+      </span>
+    </div>
+
+    <!-- METRIC PERFORMANCE INDICATOR -->
+    <div class="metric-performance-indicator">
+      <span>
+        <i class="fa fa-arrow-up {{isKPIDanger(kpiCard) ? 'decline' : 'growth'}}"></i>
+      </span>
+    </div>
+  </div>
+  <!-- CARD QLIK GRAPH -->
+  <div class="card-kpi-graph-wrapper" *ngIf="isAvailable">
+    <!-- temporary -->
+    <!-- <img src="../../../../assets/imgs/dummy-hsc-kpi-graph.PNG" alt="kpi-graph"> -->
+    <!-- iframe -->
+    <app-iframe-wrapper [iframe-src]="qlikUrl" *ngIf="qlikUrl !== ''"></app-iframe-wrapper>
+  </div>
+</div>

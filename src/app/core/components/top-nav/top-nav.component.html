@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar-bg" [ngClass]="{'show':isNavbarOpen}">
+  <button class="navbar-toggler" (click)="toggleNavbar()" type="button" aria-label="Toggle navigation">
+    <span class="navbar-toggle-icon">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </span>
+  </button>
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+  <div class="collapse navbar-collapse navbar-wrapper" id="navbar-wrapper" [ngClass]="{'show':isNavbarOpen}">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="" routerLinkActive="active" href="javascript:void(0)">
+          <span class="nav-text">
+            Information to Insight
+          </span>
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="{'menu-overlay-toggle' : isOverlayMenuVisible(i)}"
+        *ngFor="let menuItem of menuItems | keyvalue; index as i">
+        <a class="nav-link" routerLink="" (click)="toggleOverlayMenu(i)" routerLinkActive="active"
+          href="javascript:void(0)">
+          <span class="nav-text">
+            {{getSentenceCase(menuItem.key)}}
+          </span>
+          <span class="tooltip-arrow-placeholder">
+            <i class="tooltip-arrow"></i>
+          </span>
+        </a>
+
+        <div class="container menu-overlay">
+          <!-- cross btn for mobile -->
+          <div class="cross-btn-wrapper">
+            <a href="javascript:void(0)" (click)="toggleOverlayMenu(null)">
+              <span><i class="close-thick"></i></span>
+            </a>
+          </div>
+          <!-- Dashoboards -->
+          <div class="overlay-item-wrapper" *ngFor="let overlayItem of menuItem.value | keyvalue;">
+            <div class="overlay-item-header">
+              <span class="header-icon">
+                <i class="fa {{getOverlayItemIconClass(overlayItem.key)}}" aria-hidden="true"></i>
+              </span>
+              <span class="header-title">
+                {{getSentenceCase(overlayItem.key)}}
+              </span>
+            </div>
+            <ul class="overlay-item-list">
+              <li class="overlay-item" *ngFor="let links of overlayItem.value">
+                <a target="_blank" [href]="links?.links">
+                  <span>
+                    {{links?.linkLabel}}
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

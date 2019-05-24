@@ -1,0 +1,98 @@
+@import './../../../../styles/colors';
+
+.card-container {
+    padding-bottom: 50px;
+    display: block;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    max-width: 100%;
+    // margin-top: -52px;
+
+    &.toggled {
+        @media(min-width: 768px) {
+            max-width: 95%;
+        }
+    }
+
+    .card-body-section {
+        &.fallback {
+            padding:0;
+            .fallback-message-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0;
+
+                h2 {
+                    text-align: left;
+                    text-transform: uppercase;
+                    font: Myriad-regular;
+                    font-size: 24px;
+                    color: $grey-primary;
+                }
+            }
+        }
+
+        .row {
+            margin-bottom: 0;
+
+            &.cards {
+                >div {
+                    padding: 10px 0;
+
+                    @media(min-width: 768px) {
+                        padding: 1.5rem;
+                    }
+                }
+
+            }
+
+            &.card-detail {
+                >div {
+                    @media(max-width: 767px) {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-header-drop-menu-container {
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media(max-width: 400px) {
+            max-width: 290px;
+        }
+
+        h2 {
+            font: Myriad-regular;
+            font-size: 36px;
+
+            @media (max-width: 1439px) {
+                font-size: 24px;
+            }
+        }
+
+        h3,
+        h2 {
+            max-width: 700px;
+            display: inline-block;
+            color: $grey-primary;
+        }
+
+        select {
+            float: right;
+            margin-top: 7px;
+        }
+    }
+}
+
+.row {
+    margin-bottom: 24px;
+}

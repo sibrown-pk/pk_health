@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Operations Performance Dashboard (OPD)",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/313c281a-8959-461c-aec0-29f49fb3726c/sheet/922ccbc7-604f-42c9-ae0a-33bf975936a4/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Employee Engagement - Pulse Survey (Nov-2018)",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/9c688522-0681-4de8-ac9c-c3ee61bbade5/sheet/4055c4f8-f79f-44cb-935a-94fb80bc1929/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Labor Productivity Dashboard (LPD)",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/4c478b11-838b-4169-9cc7-893ca1d76ca6/sheet/sRHBZFk/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Market Share Explorer",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/956fe3a1-79e5-45df-938b-9f713c51d4c3/sheet/a33ff29f-34a8-4fd4-b5ff-5941f1a796e4/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Medical Group Enterprise Dashboard (MGE)",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/2240c377-894a-4310-8168-3eb53de27cda/sheet/00bd29a0-bd30-4045-8022-d6979a1f10c9/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Operational Performance Dashboard (OPD)",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/313c281a-8959-461c-aec0-29f49fb3726c/sheet/922ccbc7-604f-42c9-ae0a-33bf975936a4/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Physician Engagement Dashboard",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/20905ea5-f5b5-48a3-80a1-d42f52fd4e3d/sheet/d790140f-970b-4f80-af6d-3baef60c61b3/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Service Profitability Explorer",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/67865bea-0652-4140-a8dd-8d5bbe668a5f/sheet/bcaa8f49-096f-4782-a405-4b9d959e2a2e/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Supply Initiative Dashboard",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/deccd59f-407a-4569-a187-faa5dd8b1b0f/sheet/6158776c-8184-4b9a-a91e-825625ec811b/state/analysis",
+    "icon": "fa fa-home"
+  },
+  {
+    "name": "Volume Pattern Explorer",
+    "link": "http://rdcbiqlik08.chi.catholichealth.net/sense/app/6ae84ab7-8c7d-4d53-84f3-fb0491876a58/sheet/fbe810ea-adc5-4330-9850-2fde7926a1b2/state/analysis",
+    "icon": "fa fa-home"
+  }
+]

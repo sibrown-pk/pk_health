@@ -1,0 +1,15 @@
+<div class="dropdown-container" (click)="dropdownToggle()">
+  <span>Division</span>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">{{dropdownselectMeasure}}
+      </a>
+      <hr>
+      <div *ngIf="dropVis" class="dropdown-menu dropdown-primary drop" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item waves-effect waves-light" *ngFor = "let item of divisions" (click)="emitCardDivision(item)">{{item}}</a>
+        
+      </div>
+    </li>
+  </ul>
+</div>

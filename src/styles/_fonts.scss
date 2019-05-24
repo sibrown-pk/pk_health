@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: MyriadPro-Bold;
+  src: url("./../assets/fonts/myriadPro/MyriadPro-Bold.otf") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Bold.ttf") format("trueopentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Bold.woff") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Bold.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: MyriadPro-BoldIt;
+  src: url("./../assets/fonts/myriadPro/MyriadPro-BoldIt.otf") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-BoldIt.ttf") format("trueopentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-BoldIt.woff") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-BoldIt.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: MyriadPro-It;
+  src: url("./../assets/fonts/myriadPro/MyriadPro-It.otf") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-It.ttf") format("trueopentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-It.woff") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-It.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: MyriadPro-Light;
+  src: url("./../assets/fonts/myriadPro/MyriadPro-Light.otf") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Light.ttf") format("trueopentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Light.woff") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Light.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url("./../assets/fonts/myriadPro/MyriadPro-Regular.otf") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Regular.ttf") format("trueopentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Regular.woff") format("opentype"),
+    url("./../assets/fonts/myriadPro/MyriadPro-Regular.eot") format("embedded-opentype");
+}

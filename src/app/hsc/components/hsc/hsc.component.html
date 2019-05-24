@@ -1,0 +1,52 @@
+<div class="hsc-container">
+  <div class="hsc-title">
+    <h2>Hospital Scorecard</h2>
+  </div>
+  <div class="hsc-quarter-data-filter">
+    <h5>Month:</h5>
+    <select id="quarter-data-filter" class="dropdown" (change)="selectMonth($event)">
+      <option selected="selected" (click)="selectMonth(-1)" value=null>Most Recent</option>
+      <option *ngFor="let monthData of availableMonthData; let i = index" [value]=i>
+        {{monthData?.FiscalYear}} {{monthData?.Month}}
+      </option>
+    </select>
+  </div>
+  <div class="hsc-card-wrapper container">
+    <ng-container *ngIf="hscKPIData else loading">
+      <!-- GROUP -->
+      <div class="kpi-group" *ngFor="let kpiGrp of hscKPIData">
+        <ng-container *ngIf="kpiGrp else loading">
+          <!-- GROUP TITLE -->
+          <div class="kpi-title">
+            <h2>
+              {{kpiGrp[0]}}
+            </h2>
+          </div>
+          <!-- CARDS -->
+          <ul class="kpi-cards">
+            <!-- CARD -->
+            <li class="kpi-card" *ngFor="let kpiCard of kpiGrp[1]">
+              <app-card-secondary [data]="kpiCard"></app-card-secondary>
+            </li>
+            <li class="kpi-card-null" *ngIf="kpiGrp[1].length === 0">
+              <h3>TBD</h3>
+            </li>
+          </ul>
+        </ng-container>
+      </div>
+    </ng-container>
+    <ng-template #loading>
+      <h3>Loading...</h3>
+    </ng-template>
+
+  </div>
+  <div class="hsc-card-wrapper container fallback" *ngIf="hscKPIData === null">
+    <div class="kpi-group">
+      <div class="kpi-title">
+        <h2>
+          No Data for {{currentSelectedDivision}}
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>

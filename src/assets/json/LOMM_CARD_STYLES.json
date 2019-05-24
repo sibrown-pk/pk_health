@@ -1,0 +1,47 @@
+[
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Color": "#5d9428",
+   "BgImage": "background.sftp.png"
+ },
+ {
+   "MeasureName": "Employee Engagement",
+    "Color": "#58bed8",
+   "BgImage": "background.ee.png"
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Color": "#224a88",
+   "BgImage": "background.pe.png"
+ },
+ {
+   "MeasureName": "Quality",
+   "Color": "#138797",
+   "BgImage": "background.quality.png"
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Color": "#58bed8",
+   "BgImage": "background.pe.png"
+ },
+ {
+   "MeasureName": "Safety",
+   "Color": "#5b951d",
+   "BgImage": "background.safety.png"
+ },
+ {
+   "MeasureName": "Growth",
+   "Color": "#224a88",
+   "BgImage": "background.growth.png"
+ },
+ {
+   "MeasureName": "Transformation",
+   "Color": "#138797",
+   "BgImage": "background.transformation.png"
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Color": "#5b951d",
+   "BgImage": "background.oe.png"
+ }
+]

@@ -1,0 +1,58 @@
+<div class="landing-page">
+  <h2 class="mt-sm-5 mt-md-5 head">Quick Links</h2>
+  <div class="quick-link-wrapper">
+    <div class="row box-border mt-md-3 mt-sm-3">
+      <ng-container *ngIf="quickLinks else loading">
+        <div class="col-md-4 col-xs-4 col-sm-4 p-3 col-lg-3" *ngFor="let link of quickLinks">
+          <a class="quick-links" [href]="link?.quikLinks" target="_blank">
+            <span class="ql-image">
+              <img src="/assets/imgs/Icon/Metric.png" alt="ql-image">
+            </span>
+            <span class="link-name">{{link?.dashboardNames | uppercase}}</span>
+          </a>
+        </div>
+      </ng-container>
+      <ng-template #loading>
+        <div class="col-12">
+          <h5>Loading...</h5>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+  <div class="row mt-sm-5 mb-sm-5 landing-page-cards">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header" [ngStyle]="{'background-image': 'url(/assets/imgs/LOMM.1.png)'}">
+          <h5 class="card-title text-white">
+            <span>Living our mission measures</span>
+          </h5>
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">A common definition of success for our organization and the centerpiece for monitoring
+            and managing performance throughout Catholic Health Initiatives</p>
+          <hr>
+          <a href="javascript:void(0)" (click)="routeTo('lomm')" class="btn pull-right footer-text">View All
+            Measures</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header" [ngStyle]="{'background-image': 'url(/assets/imgs/Hospital_Scorecard.2.png)'}">
+          <h5 class="card-title text-white">
+            <span>Hospital Scorecard</span>
+          </h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">A common definition of success for our organization and the centerpiece for monitoring
+            and managing performance throughout Catholic Health Initiatives</p>
+          <hr>
+          <a href="javascript:void(0)" (click)="routeTo('hsc')" class="btn pull-right footer-text">View Full
+            Scorecard</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

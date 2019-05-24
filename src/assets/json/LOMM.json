@@ -1,0 +1,814 @@
+{
+   "LOMM":[
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "18.8",
+   "Goal": "18.7",
+   "Division": "CHI",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "15.2",
+   "Goal": "14.5",
+   "Division": "Arkansas",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "16.4",
+   "Goal": "16.8",
+   "Division": "Fargo ",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "25.2",
+   "Goal": "25.5",
+   "Division": "Kentucky",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "19.5",
+   "Goal": "18.6",
+   "Division": "Nebraska",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "8.9",
+   "Goal": "9.4",
+   "Division": "Ohio",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "22.6",
+   "Goal": "23.1",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "8.3",
+   "Goal": "9",
+   "Division": "Tennessee",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Service to the Poor & Vulnerable",
+   "Period": "FY19 YTD September",
+   "Actual": "16",
+   "Goal": "15.4",
+   "Division": "Texas",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 1
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.77",
+   "Division": "CHI",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.91",
+   "Division": "Arkansas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.7",
+   "Division": "Fargo ",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.82",
+   "Division": "Kentucky",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.8",
+   "Division": "Nebraska",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.69",
+   "Division": "Ohio",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.69",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.94",
+   "Division": "Tennessee",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Employee Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.69",
+   "Division": "Texas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 2
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.82",
+   "Division": "CHI",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "4.02",
+   "Division": "Arkansas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.26",
+   "Division": "Fargo ",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.92",
+   "Division": "Kentucky",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.78",
+   "Division": "Nebraska",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "4.06",
+   "Division": "Ohio",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.72",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "4.1",
+   "Division": "Tennessee",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Physician Engagement",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "3.93",
+   "Division": "Texas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 3
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "60.6",
+   "Goal": "75",
+   "Division": "CHI",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "59.5",
+   "Goal": "75",
+   "Division": "Arkansas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "60.8",
+   "Goal": "75",
+   "Division": "Fargo ",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "67.2",
+   "Goal": "75",
+   "Division": "Kentucky",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "60.4",
+   "Goal": "75",
+   "Division": "Nebraska",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "36.6",
+   "Goal": "75",
+   "Division": "Ohio",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "56.3",
+   "Goal": "75",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "57.1",
+   "Goal": "75",
+   "Division": "Tennessee",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Quality ",
+   "Period": "10/2017-09/2018",
+   "Actual": "62.5",
+   "Goal": "75",
+   "Division": "Texas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 4
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "39.6",
+   "Goal": "75",
+   "Division": "CHI",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "28.6",
+   "Goal": "75",
+   "Division": "Arkansas",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "59.7",
+   "Goal": "75",
+   "Division": "Fargo ",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "47.0",
+   "Goal": "75",
+   "Division": "Kentucky",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "43.9",
+   "Goal": "75",
+   "Division": "Nebraska",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "42.6",
+   "Goal": "75",
+   "Division": "Ohio",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "29.5",
+   "Goal": "75",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "69.2",
+   "Goal": "75",
+   "Division": "Tennessee",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Patient Experience",
+   "Period": "10/2017-09/2018",
+   "Actual": "43.9",
+   "Goal": "75",
+   "Division": "Texas",
+   "Reporting Period": "10/2017-09/2018",
+   "Format": "Number",
+   "Measure Order": 5
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "61.7",
+   "Goal": "75",
+   "Division": "CHI",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "62.0",
+   "Goal": "75",
+   "Division": "Arkansas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "69.6",
+   "Goal": "75",
+   "Division": "Fargo ",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "48.2",
+   "Goal": "75",
+   "Division": "Kentucky",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "64.1",
+   "Goal": "75",
+   "Division": "Nebraska",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "44.3",
+   "Goal": "75",
+   "Division": "Ohio",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "63.4",
+   "Goal": "75",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "34.9",
+   "Goal": "75",
+   "Division": "Tennessee",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Safety",
+   "Period": "10/2017-09/2018",
+   "Actual": "64.7",
+   "Goal": "75",
+   "Division": "Texas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 6
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "2.0",
+   "Goal": "2.0",
+   "Division": "CHI",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "4.0",
+   "Goal": "6.4",
+   "Division": "Arkansas",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "-3.9",
+   "Goal": "3.7",
+   "Division": "Fargo ",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "-5.0",
+   "Goal": "-2",
+   "Division": "Kentucky",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "-2.7",
+   "Goal": "3.3",
+   "Division": "Nebraska",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "-0.2",
+   "Goal": "-11.2",
+   "Division": "Ohio",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "5.0",
+   "Goal": "4.1",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "6.4",
+   "Goal": "2.5",
+   "Division": "Tennessee",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Growth",
+   "Period": "FY19 YTD October",
+   "Actual": "15.1",
+   "Goal": "6.7",
+   "Division": "Texas",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 7
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "CHI",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "Arkansas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "Fargo ",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "Kentucky",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "Nebraska",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "Ohio",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "Tennessee",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Transformation",
+   "Period": "FY19",
+   "Actual": "TBD",
+   "Goal": "TBD",
+   "Division": "Texas",
+   "Reporting Period": "",
+   "Format": "Number",
+   "Measure Order": 8
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "6.7",
+   "Goal": "8.0",
+   "Division": "CHI",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "-4.2",
+   "Goal": "2.5",
+   "Division": "Arkansas",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "5.4",
+   "Goal": "10.3",
+   "Division": "Fargo ",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "9.0",
+   "Goal": "8.8",
+   "Division": "Kentucky",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "6.2",
+   "Goal": "10.7",
+   "Division": "Nebraska",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "5.4",
+   "Goal": "7.6",
+   "Division": "Ohio",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "10.4",
+   "Goal": "11.3",
+   "Division": "Pacific Northwest",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "8.0",
+   "Goal": "10.4",
+   "Division": "Tennessee",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+ },
+ {
+   "MeasureName": "Operating EBIDA",
+   "Period": "FY19 YTD October",
+   "Actual": "7.1",
+   "Goal": "7.5",
+   "Division": "Texas",
+   "Reporting Period": "",
+   "Format": "Percent",
+   "Measure Order": 9
+}
+]
+}

@@ -1,0 +1,102 @@
+<aside class="filter-container" [ngClass]="isFilterPanelToggled ? 'toggled' : ''">
+  <div class="filter-panel-header">
+    <a href="javascript:void(0)" (click)="closeFilterPanel()">
+      <span class="close-thin">
+      </span>
+    </a>
+    <span>
+      Filters
+    </span>
+  </div>
+  <div class="tab-group-container">
+
+    <!-- DIVISION -->
+    <div class="tab-group" [ngClass]="openTabGroup === 1 ? 'open' : ''">
+      <a href="javascript:void(0)" class="tab-group-btn" >
+        <span class="back-arrow" (click)="closeFilterPanel()">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </span>
+        <span class="tooltip-arrow-placeholder">
+          <i class="tooltip-arrow"></i>
+        </span>
+        <span (click)="toggleTabGroup(1)">
+          DIVISION
+        </span>
+      </a>
+      <div class="tab-tooltip" [ngClass]="isHscPage ? 'collapsible' : ''">
+        <ul class="tabs">
+          <li class="tab-item" [ngClass]="{'selected': currentSelectedDivision === division}"
+            *ngFor="let division of lommDivisions;" (click)="selectDivision(division)">
+            <span class="tab-pill">
+              <span>
+                <i class="checkmark"></i>
+              </span>
+              <span>
+                {{division}}
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <hr class="divider">
+    <!-- HOSPITAL -->
+    <div class="tab-group" [ngClass]="openTabGroup === 2 ? 'open' : ''" *ngIf="isHscPage">
+      <a href="javascript:void(0)" class="tab-group-btn" >
+        <span class="back-arrow" (click)="closeFilterPanel()">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </span>
+        <span class="tooltip-arrow-placeholder">
+          <i class="tooltip-arrow"></i>
+        </span>
+        <span (click)="toggleTabGroup(2)">
+          HOSPITAL
+        </span>
+      </a>
+      <div class="tab-tooltip" [ngClass]="isHscPage ? 'collapsible' : ''">
+        <div class="search-box-wrapper">
+          <div class="search-box">
+            <input type="text" name="search" id="hospital-search" placeholder="Search" [(ngModel)]="searchText">
+            <a role="button" class="search-btn">
+              <span>
+                <i class="fa fa-search"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="selected-division" *ngIf="hospitalFilterDivisionPillVisible">
+          <div class="selected-division-pill">
+            <span>
+              {{currentSelectedDivision}}
+            </span>
+            <span (click)="showAllHospitals()">
+              <i class="close-thick"></i>
+            </span>
+          </div>
+        </div>
+        <hr>
+        <ul class="tabs hospital-filter">
+          <li *ngFor="let hospitalData of hospitalData | search:searchText" class="tab-item" [title]="hospitalData?.Hospital"
+            (click)="selectHospital(hospitalData)" [ngClass]="{'selected': currentSelectedHospital?.Hospital === hospitalData?.Hospital}">
+            <span class="tab-pill">
+              <span>
+                <i class="checkmark"></i>
+              </span>
+              <span>
+                {{hospitalData?.Hospital}}
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="view-results-btn-wrapper">
+    <a href="javascript:void(0)" class="view-results-btn" (click)="viewResults()">
+      <span>View Results</span>
+    </a>
+  </div> -->
+
+</aside>
