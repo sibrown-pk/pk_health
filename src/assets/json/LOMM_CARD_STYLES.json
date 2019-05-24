@@ -1,6 +1,6 @@
 [
  {
-   "MeasureName": "Service to the Poor & Vulnerable",
+   "MeasureName": "Quality",
    "Color": "#5d9428",
    "BgImage": "background.sftp.png"
  },
@@ -10,12 +10,12 @@
    "BgImage": "background.ee.png"
  },
  {
-   "MeasureName": "Physician Engagement",
+   "MeasureName": "Operating Costs",
    "Color": "#224a88",
    "BgImage": "background.pe.png"
  },
  {
-   "MeasureName": "Quality",
+   "MeasureName": "Dedicated Services",
    "Color": "#138797",
    "BgImage": "background.quality.png"
  },
@@ -35,12 +35,12 @@
    "BgImage": "background.growth.png"
  },
  {
-   "MeasureName": "Transformation",
+   "MeasureName": "Clinical Engagement",
    "Color": "#138797",
    "BgImage": "background.transformation.png"
  },
  {
-   "MeasureName": "Operating EBIDA",
+   "MeasureName": "Evolution",
    "Color": "#5b951d",
    "BgImage": "background.oe.png"
  }

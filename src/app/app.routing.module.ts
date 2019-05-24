@@ -4,10 +4,10 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { LandingPageComponent } from './core/components/landing-page/landing-page.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'information-to-insight', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
-    path: 'information-to-insight', component: LandingPageComponent, data: {
-      breadcrumb: 'Information to Insight'
+    path: 'home', component: LandingPageComponent, data: {
+      breadcrumb: 'My Health Records'
     }
   },
   {

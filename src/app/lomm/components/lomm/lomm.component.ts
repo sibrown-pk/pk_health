@@ -62,14 +62,18 @@ export class LommComponent implements OnInit, AfterViewInit, OnDestroy {
     );
     this._dataService.getLommData().then(res => {
       res = DataManipulators.groupBy(res, 'QuaterData');
-      this._lommData = res['LOMM'] ? res['LOMM'].map((item: ILomm) => { item.Division = item.Division.trim(); return item; }) : [];
-      this._nextQtrdata = res['LOMM2'] ? res['LOMM2'].map((item: ILomm) => { item.Division = item.Division.trim(); return item; }) : [];
-      console.log('LOMM data', this._lommData);
-      console.log('LOMM2 data', this._nextQtrdata);
+      const quarterKeys = res ? Object.keys(res) : [];
+      if (quarterKeys.length > 0) {
+        this._lommData = res[quarterKeys[0]] ? res[quarterKeys[0]].map((item: ILomm) => { item.Division = item.Division.trim(); return item; }) : [];
+        this._nextQtrdata = res[quarterKeys[1]] ? res[quarterKeys[1]].map((item: ILomm) => { item.Division = item.Division.trim(); return item; }) : [];
+        console.log(`${quarterKeys[0]}`, this._lommData);
+        console.log(`${quarterKeys[1]}`, this._nextQtrdata);
+      }
+
       try {
-        this._lommDivisions = res['LOMM'] ? Array.from(new Set(this._lommData.map((key) => key.Division.trim()))) : [];
+        this._lommDivisions = res[quarterKeys[0]] ? Array.from(new Set(this._lommData.map((key) => key.Division.trim()))) : [];
         this._lommDataDivisionGrouped = this._lommData.length > 0 ? DataManipulators.groupBy(this._lommData, 'Division') : null;
-        this._nextQtrDataDivisionGrouped = res['LOMM2'] ? DataManipulators.groupBy(this._nextQtrdata, 'Division') : [];
+        this._nextQtrDataDivisionGrouped = res[quarterKeys[1]] ? DataManipulators.groupBy(this._nextQtrdata, 'Division') : [];
         this.cardDivisionSelect(this._currentDivisionFilterSelection);
       } catch (e) {
         console.warn(e);
@@ -92,7 +96,7 @@ export class LommComponent implements OnInit, AfterViewInit, OnDestroy {
   cardDivisionSelect(key: string) {
     key = key.trim();
     this._currentDivisionFilterSelection = key;
-    // The below line returns the generated Qlik URL 
+    // The below line returns t he generated Qlik URL 
     // (with the selection parameter received from the filter component)
     // which is then passed on to the dumb component of the  iframe to load the Qlik app
     if (this._lommDivisions.indexOf(key) > -1) {

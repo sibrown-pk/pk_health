@@ -10,7 +10,7 @@ import { filter, distinctUntilChanged } from 'rxjs/operators';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnDestroy {
-  title = 'Information to Insights';
+  title = 'PK Health';
   private _filterPanelToggleStatus = false;
   private _isVisible = false;
   private subcriptions = new Subscription();
@@ -31,7 +31,7 @@ export class AppComponent implements OnDestroy {
         distinctUntilChanged()
       ).subscribe({
         next: (event: NavigationEnd) => {
-          this._isVisible = event.url === '/' || event.url === '/information-to-insight' || event.urlAfterRedirects === '/information-to-insight'
+          this._isVisible = event.url === '/' || event.url === '/home' || event.urlAfterRedirects === '/home'
             ? false
             : true;
 

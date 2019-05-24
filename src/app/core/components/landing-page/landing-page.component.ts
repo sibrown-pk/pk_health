@@ -16,7 +16,7 @@ export class LandingPageComponent implements OnInit {
     this._dataService.getQuickLinksData().then((res: any) => {
       this._quickLinks = res.map(item => DataManipulators.objectKeysToCamelCase(item));
       console.log(res);
-      
+
     }).catch(e => {
       console.warn(e);
     });
