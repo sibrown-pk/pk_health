@@ -14,7 +14,7 @@
 
   >h2 {
     font-family: MyriadPro-Regular;
-    background: $bg-purple;
+    background: $bg-blue;
     color: $white;
     font-size: 20px;
     font-weight: normal;
@@ -77,7 +77,7 @@
         height: 100%;
 
         .card-header {
-          background: $bg-purple-2;
+          background: $bg-blue;
           position: relative;
           display: -ms-flexbox;
           display: -webkit-box;
@@ -103,7 +103,7 @@
 
           h5.card-title {
             font-size: 32px;
-            font-family: MyriadPro-Bold;
+            // font-family: MyriadPro;
             position: relative;
             display: block;
             margin: auto 0;

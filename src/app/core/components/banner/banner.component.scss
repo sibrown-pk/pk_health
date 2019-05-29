@@ -22,12 +22,12 @@
         background-position: top center;
         background-size: cover;
         padding: 10px 15px;
-        border-bottom: 5px solid $text-color-3;
+        border-bottom: 5px solid $text-color-6;
 
 
         @media(min-width: 768px) {
             padding: $page-container-padding;
-            background-image: url(/assets/imgs/pk_health_banner.png);
+            background-image: url(/assets/imgs/Image_1.1.png);
         }
 
         @media (max-width: 767px) {
@@ -45,7 +45,7 @@
 
         h1 {
             font-size: 48px;
-            font-weight: 600;
+            // font-weight: 600;
             letter-spacing: 0.2px;
 
             @media (max-width: 767px) {

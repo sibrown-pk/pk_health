@@ -397,8 +397,8 @@
 
                         &:hover {
                             >span.tab-pill {
-                                background-color: $deep-lavender;
-                                border-color: $deep-lavender;
+                                background-color: $bg-blue;
+                                border-color: $bg-blue;
                                 color: $white;
 
                                 span {
@@ -409,8 +409,8 @@
 
                         &.selected {
                             >span.tab-pill {
-                                background-color: $deep-lavender;
-                                border-color: $deep-lavender;
+                                background-color: $bg-blue;
+                                border-color: $bg-blue;
                                 color: $white;
 
                                 span {

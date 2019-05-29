@@ -108,7 +108,7 @@ export class AppFilterComponent implements OnInit, AfterViewInit, OnDestroy {
     this.subscriptions.add(
       this._notification.getCurrentRoute().subscribe({
         next: (path: string) => {
-          this._isHscPage = path === '/hsc';
+          this._isHscPage = path === '/data-cards';
         },
         error: e => {
           console.warn(e);
