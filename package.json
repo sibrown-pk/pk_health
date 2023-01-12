@@ -34,7 +34,7 @@
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
-    "ngx-papaparse": "^3.0.2",
+    "ngx-papaparse": "^6.0.2",
     "roboto-fontface": "^0.10.0",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
